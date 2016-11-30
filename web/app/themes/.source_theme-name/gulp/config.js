@@ -1,5 +1,19 @@
-var dest = './dist'
+'use strict'
+
+var path = require('path')
+
+function distName () {
+  var folder = path.dirname(__dirname)
+  folder = path.basename(folder)
+  return folder.replace('.source_', '')
+}
+
+var folderName = distName()
+var dest = './../' + folderName
 var src = './src'
+var server = 'wordpress-boilerplate.awsm.dev'
+
+
 
 export default {
 
@@ -32,11 +46,8 @@ export default {
   // ==============================
 
   browserSync: {
-    port: 9000,
-    server: {
-      // Serve up our build folder
-      baseDir: dest
-    },
+    port: 3030,
+    proxy: server,
     notify: false,
     open: false,
     files: [
@@ -46,10 +57,14 @@ export default {
     ]
   },
 
+  code: {
+    src: src + '/code/**',
+    dest: dest + '/'
+  },
 
   fonts: {
-    src: src + '/fonts/**',
-    dest: dest + '/fonts'
+    src: src + '/assets/fonts/**',
+    dest: dest + '/assets/fonts'
   },
 
 
@@ -99,7 +114,7 @@ export default {
 
   sass: {
     src: src + '/sass/**/*.{sass,scss}',
-    dest: dest + '/css',
+    dest: dest + '/',
 
     // gulp-autoprefixer settings
 
@@ -144,7 +159,7 @@ export default {
           render: {
             scss: {
               template: 'gulp/tpl/_sprite-inline.scss',
-              dest: '../../src/sass/_sprite.scss'
+              dest: '../../../.source_' + folderName + '/src/sass/_sprite.scss'
             }
           }
         }
