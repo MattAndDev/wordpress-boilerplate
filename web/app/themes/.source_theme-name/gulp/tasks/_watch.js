@@ -1,5 +1,6 @@
 import gulp from 'gulp'
 import clean from './clean'
+import code from './code'
 import bundler from './bundler'
 import fonts from './fonts'
 import images from './images'
@@ -47,6 +48,12 @@ gulp.task('watch',
   gulp.watch(
     config.fonts.src,
     gulp.parallel(fonts)
+  ),
+
+  // Code watcher
+  gulp.watch(
+    config.code.src,
+    gulp.parallel(code)
   ),
 
   // Twig watcher
