@@ -59,8 +59,8 @@ export default {
   // ==============================
 
   images: {
-    src: src + '/images/**',
-    dest: dest + '/images',
+    src: src + '/assets/images/**',
+    dest: dest + '/assets/images',
 
     // gulp-imagemin settings
 
@@ -129,8 +129,8 @@ export default {
 
 
   svgSprite: {
-    src: src + '/icons/*.svg',
-    dest: dest + '/images',
+    src: src + '/assets/icons/*.svg',
+    dest: dest + '/assets/images',
     config: {
       shape: {
         id: {
