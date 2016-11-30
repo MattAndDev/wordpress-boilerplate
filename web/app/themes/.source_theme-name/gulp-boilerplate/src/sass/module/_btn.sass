@@ -1,0 +1,39 @@
+//============================================
+// Buttons
+//============================================
+
+.btn
+  display: inline-block
+  width: auto
+  padding: $space-quarter 20px
+  transition: background-color .2s, border-color .2s
+  border: 1px solid $gray-dark
+  border-radius: 3px
+  background: $gray-dark
+  color: white
+  font-family: inherit
+  font-size: inherit
+  font-weight: normal
+  line-height: $lh
+  text-align: center
+  text-shadow: none
+  text-transform: uppercase
+  white-space: nowrap
+  vertical-align: middle
+
+.no-touchevents .btn:focus,
+.no-touchevents .btn:hover
+  border-color: $primary
+  outline: 0
+  background-color: $primary
+  cursor: pointer
+  z-index: 1
+
+.no-touchevents .btn.disabled:hover,
+.no-touchevents .btn[disabled]:hover,
+.btn.disabled,
+.btn[disabled]
+  border-color: $gray-light
+  background-color: $gray-light
+  color: $gray
+  cursor: not-allowed

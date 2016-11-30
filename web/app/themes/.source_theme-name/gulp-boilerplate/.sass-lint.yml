@@ -1,0 +1,36 @@
+# Linter Options
+options:
+  merge-default-rules: false
+  formatter: html
+  output-file: 'linters/sass-lint.html'
+
+# Rule Configuration
+rules:
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - mq
+        - center-transform
+  no-warn: 1
+  no-debug: 1
+  no-ids: 2
+  no-important: 2
+  space-after-comma:
+    - 2
+    -
+      include: true
+  hex-notation:
+    - 2
+    -
+      style: uppercase
+  indentation:
+    - 1
+    -
+      size: 2
+  property-sort-order:
+    - 1
+    -
+      order: smacss

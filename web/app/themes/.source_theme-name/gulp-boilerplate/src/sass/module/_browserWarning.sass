@@ -1,0 +1,18 @@
+//============================================
+// Browser
+//============================================
+
+.browserWarning
+  +pos(0, top left, fixed)
+  +size(100%)
+  position: absolute
+  background: black
+  color: white
+  z-index: 1000000
+
+.browserWarning_inner
+  +center(300px, 180px)
+
+.browserWarning_inner a
+  border-bottom: 1px solid shade($gray, 40%)
+  color: $gray
