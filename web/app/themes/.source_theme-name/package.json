@@ -7,18 +7,16 @@
     "url": "https://github.com/MattAndDev/gulp-boilerplate.git"
   },
   "author": {
-    "name" : "Matteo Maronati",
-    "email" : "me@mattinthe.net",
-    "url" : "http://mattinthe.net/"
+    "name": "Matteo Maronati",
+    "email": "me@mattinthe.net",
+    "url": "http://mattinthe.net/"
   },
   "engines": {
     "node": "^node 6.9.1",
     "npm": "3.10.8"
   },
-  "browser": {
-  },
-  "browserify-shim": {
-  },
+  "browser": {},
+  "browserify-shim": {},
   "browserify": {
     "transform": [
       "babelify"
@@ -63,6 +61,7 @@
     "sass-lint": "^1.9.1"
   },
   "dependencies": {
-    "eventemitter3": "^2.0.2"
+    "eventemitter3": "^2.0.2",
+    "gulp-changed": "^1.3.2"
   }
 }
