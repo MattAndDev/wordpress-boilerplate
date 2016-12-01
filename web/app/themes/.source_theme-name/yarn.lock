@@ -3124,6 +3124,13 @@ gulp-filesize:
     gulp-util "~2.2.0"
     map-stream "~0.0.4"
 
+gulp-flatten:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/gulp-flatten/-/gulp-flatten-0.3.1.tgz#51e7fec13a33c404578d18c1589d1b5bc45fe1d6"
+  dependencies:
+    gulp-util "^3.0.7"
+    through2 "^2.0.0"
+
 gulp-imagemin:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/gulp-imagemin/-/gulp-imagemin-3.1.0.tgz#dec1e3f785452c187e554ecf43c114f92b367d31"
