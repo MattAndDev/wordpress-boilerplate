@@ -7,7 +7,7 @@ import images from './images'
 import sass from './sass'
 import sprite from './sprite'
 import server from './server'
-import twig from './twig'
+import templates from './templates'
 import config from '../config'
 
 
@@ -56,9 +56,9 @@ gulp.task('watch',
     gulp.parallel(code)
   ),
 
-  // Twig watcher
+  // templates watcher
   gulp.watch(
-    [config.twig.src, config.twig.partialsGlob],
-    gulp.parallel(twig)
+    [config.templates.src],
+    gulp.parallel(templates)
   )
 )

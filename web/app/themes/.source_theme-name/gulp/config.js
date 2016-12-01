@@ -7,14 +7,13 @@ function distName () {
   folder = path.basename(folder)
   return folder.replace('.source_', '')
 }
-
 var folderName = distName()
-var dest = './../' + folderName
-var src = './src'
+var dest = path.join(path.dirname(__dirname), '../', distName())
+var src = path.join(path.dirname(__dirname), 'src')
 var server = 'wordpress-boilerplate.awsm.dev'
 
 
-
+console.log(src);
 export default {
 
 
@@ -87,10 +86,10 @@ export default {
   // markup.js settings
   // ==============================
 
-  twig: {
-    src: src + '/twig/templates/*.twig',
-    dest: dest + '/',
-    partialsGlob: src + '/twig/**/*.twig'
+  templates: {
+    src: src + '/templates/**/*.twig',
+    dest: dest + '/templates/',
+    base: src + '/templates'
   },
 
 
