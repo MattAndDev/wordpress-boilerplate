@@ -1,14 +1,19 @@
 # Application
-web/app/plugins/*
-!web/app/plugins/.gitkeep
-web/app/mu-plugins/*/
-web/app/upgrade
-web/app/uploads/*
+public/app/plugins/*
+!public/app/plugins/.gitkeep
+public/app/mu-plugins/*/
+public/app/upgrade
+public/app/uploads/*
 !web/app/uploads/.gitkeep
 
 # WordPress
 public/wp
 public/.htaccess
+
+# WordPress theme
+public/app/themes/themes/*
+!public/app/themes/themes/.source_*
+
 
 # WP-CLI
 db-sync
