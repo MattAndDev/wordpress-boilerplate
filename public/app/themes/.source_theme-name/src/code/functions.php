@@ -1,16 +1,17 @@
 <?php
-/* ==========================================================================
-   #Dependencies
-   ========================================================================== */
 
-/* Twig
-   ========================================================================== */
+// =
+// Autoloader for directories helper, use with care
+// exposes the include_all_files_recursively function
 
-require_once(get_template_directory() . '/inc/timber/setup.php');
+require_once(get_template_directory() . '/inc/utilities/include_all_files_recursively.php');
 
-/* Theme setup
-   ========================================================================== */
+// =
+// Load all Timber
 
-// require_once(get_template_directory() . '/inc/site.php');
+include_all_files_recursively('/inc/timber');
 
-// new Site();
+// =
+// Load all data-model
+
+include_all_files_recursively('/inc/timber');
