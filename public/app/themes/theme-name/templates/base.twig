@@ -3,11 +3,6 @@
 
   <body class="{{body_class}}">
 
-    <!-- If using inline svgs -->
-    <div class="svgSprite">
-      {% include 'assets/sprite.svg' %}
-    </div>
-
   {% include 'includes/browser-warning.twig' %}
 
     {% block header %}
@@ -32,7 +27,7 @@
 
       {% include 'partials/footer.twig' %}
 
-      {{ wp_footer() }}
+      {{ wp_footer }}
 
     {% endblock %}
 
