@@ -14,4 +14,9 @@ include_all_files_recursively('/inc/timber');
 // =
 // Load all data-model
 
-include_all_files_recursively('/inc/timber');
+include_all_files_recursively('/inc/data-model');
+
+// =
+// Load all scripts
+
+include_all_files_recursively('/inc/scripts');
