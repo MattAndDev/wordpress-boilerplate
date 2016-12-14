@@ -36,8 +36,8 @@ class Settings extends EventEmitter {
 
     // window scroll
     this.scroll = {
-      x: window.pageXOffset || window.scrollLeft || document.body.scrollLeft,
-      y: window.pageYOffset || window.pageYOffset || document.body.pageYOffset
+      x: window.pageXOffset || window.scrollLeft,
+      y: window.pageYOffset || window.pageYOffset
     }
 
     // Is touch flag

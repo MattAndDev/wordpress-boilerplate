@@ -13,7 +13,7 @@ domReady(() => {
   settings.on('resize', () => {})
   settings.on('scroll', () => {})
   settings.on('mousemove', (e) => {})
-
+  console.log(window.WP);
   // do some magic
 
 })
