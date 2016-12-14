@@ -7,8 +7,8 @@ web/app/uploads/*
 !web/app/uploads/.gitkeep
 
 # WordPress
-web/wp
-web/.htaccess
+public/wp
+public/.htaccess
 
 # WP-CLI
 db-sync
