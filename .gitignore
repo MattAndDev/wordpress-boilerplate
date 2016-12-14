@@ -11,7 +11,7 @@ public/wp
 public/.htaccess
 
 # WordPress theme
-public/app/themes
+public/app/themes/*
 !public/app/themes/.source_*
 
 
