@@ -11,8 +11,8 @@ public/wp
 public/.htaccess
 
 # WordPress theme
-public/app/themes/themes/*
-!public/app/themes/themes/.source_*
+public/app/themes
+!public/app/themes/.source_*
 
 
 # WP-CLI
