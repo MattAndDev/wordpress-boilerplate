@@ -6,22 +6,16 @@
   "homepage": "https://roots.io/bedrock/",
   "authors": [
     {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "name": "Matteo Maronati",
+      "email": "me@mattinthe.net",
+      "homepage": "https://github.com/MattAndDev"
     }
   ],
   "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
+    "wordpress", "timber", "gulp"
   ],
   "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
+    "issues": "https://github.com/MattAndDev/wordpress-boilerplate/issues"
   },
   "config": {
     "preferred-install": "dist"
@@ -39,7 +33,7 @@
     "johnpbloch/wordpress": "4.6.1",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "twig/twig": "~1.0"
+    "timber/timber": "1.1.12"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
@@ -50,11 +44,11 @@
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
-    "wordpress-install-dir": "web/wp"
+    "wordpress-install-dir": "public/wp"
   },
   "scripts": {
     "test": [
-      "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
+      "vendor/bin/phpcs --ignore=public/wp/,vendor/ -n -s ."
     ]
   }
 }
