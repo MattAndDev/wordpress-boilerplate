@@ -9,7 +9,7 @@ $data = array(
   'post' => $post
 );
 
-Site::render( array(
+Timber::render( array(
   'single-' . $post->post_type . '.pug',
   'single.pug'
 ), $data );

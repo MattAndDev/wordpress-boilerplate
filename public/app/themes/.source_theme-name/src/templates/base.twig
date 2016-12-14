@@ -2,12 +2,11 @@
 
 
   <body class="{{body_class}}">
-
   {% include 'includes/browser-warning.twig' %}
 
     {% block header %}
 
-      {% include 'partials/header.twig' %}
+      {% include 'sections/header.twig' %}
 
     {% endblock %}
 
@@ -25,13 +24,13 @@
 
     {% block footer %}
 
-      {% include 'partials/footer.twig' %}
+      {% include 'sections/footer.twig' %}
 
       {{ wp_footer }}
 
     {% endblock %}
 
-    {% include 'partials/scripts.twig' %}
+    {% include 'includes/scripts.twig' %}
 
   </body>
 </html>

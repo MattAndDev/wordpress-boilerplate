@@ -9,8 +9,11 @@
  * @package  WordPress
  */
 
-$data = array(
-  'post' => $post
-);
 
-Site::render( 'index.twig', $data );
+ $data = Timber::get_context();
+
+ $data['posts'] = Timber::get_posts();
+
+ $templates = array( 'index.twig' );
+
+ Timber::render( $templates, $data );

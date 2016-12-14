@@ -17,7 +17,7 @@
  * @package  WordPress
  */
 
-$post->post_content = wpautop($post->post_content);
+
 $data = array(
   'post' => $post
 );
@@ -28,4 +28,4 @@ $templates = array(
   'page.twig'
 );
 
-Site::render( $templates, $data );
+Timber::render( $templates, $data );

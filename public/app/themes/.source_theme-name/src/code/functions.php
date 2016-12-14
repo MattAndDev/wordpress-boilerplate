@@ -6,11 +6,11 @@
 /* Twig
    ========================================================================== */
 
-require_once(get_template_directory() . '/inc/twig/setup.php');
+require_once(get_template_directory() . '/inc/timber/setup.php');
 
 /* Theme setup
    ========================================================================== */
 
-require_once(get_template_directory() . '/inc/site.php');
+// require_once(get_template_directory() . '/inc/site.php');
 
-new Site();
+// new Site();
