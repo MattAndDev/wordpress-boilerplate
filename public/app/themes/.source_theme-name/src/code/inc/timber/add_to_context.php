@@ -7,8 +7,8 @@ function add_to_context( $data ) {
 
   // assets location
   $data['assets'] = array(
-    'sprite_url' => get_template_directory_uri() . '/images/sprite.svg',
-    'images_url' => get_template_directory_uri() . '/images/'
+    'sprite_url' => get_template_directory_uri() . '/assets/images/sprite.svg',
+    'images_url' => get_template_directory_uri() . '/assets/images/'
   );
 
   // pass default menu
