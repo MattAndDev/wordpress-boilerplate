@@ -16,4 +16,4 @@
 
  $templates = array( 'index.twig' );
 
- Timber::render( $templates, $data );
+ Timber::render( $templates, $data, 600 );

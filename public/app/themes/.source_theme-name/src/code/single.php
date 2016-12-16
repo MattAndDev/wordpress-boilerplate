@@ -8,8 +8,7 @@
 $data = array(
   'post' => $post
 );
-
 Timber::render( array(
   'single-' . $post->post_type . '.pug',
   'single.pug'
-), $data );
+), $data, 600 );
