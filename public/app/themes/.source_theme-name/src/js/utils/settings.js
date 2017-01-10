@@ -36,8 +36,8 @@ class Settings extends EventEmitter {
 
     // window scroll
     this.scroll = {
-      x: window.pageXOffset || window.scrollLeft,
-      y: window.pageYOffset || window.pageYOffset
+      x: window.pageXOffset || window.scrollLeft || document.body.scrollLeft,
+      y: window.pageYOffset || window.pageYOffset || document.body.pageYOffset
     }
 
     // Is touch flag
@@ -90,6 +90,12 @@ class Settings extends EventEmitter {
   // Add event listener and emit events
   addEventListeners () {
 
+    // set initial scroll position
+    this.scroll = {
+      x: 0,
+      y: 0
+    }
+
     // Scroll
     window.addEventListener('scroll', () => {
       this.scroll.x = window.pageXOffset || window.scrollLeft || document.body.scrollLeft
@@ -102,6 +108,13 @@ class Settings extends EventEmitter {
       }
       this.emit('scroll')
     })
+
+
+    // set initial window size
+    this.window = {
+      x: window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth,
+      y: window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight
+    }
 
     // Resize (with timeout)
     window.addEventListener('resize', () => {
