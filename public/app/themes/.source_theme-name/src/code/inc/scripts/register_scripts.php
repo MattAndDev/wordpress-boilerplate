@@ -8,9 +8,11 @@ function register_scripts() {
   // pass wp data to the scripts
   $wp_data = array(
     'theme' => get_template_directory_uri(),
+    'lang' => get_bloginfo('language'),
     'ajax' => array(
       'url' => admin_url( 'admin-ajax.php' )
-    )
+    ),
+    'postId' => get_the_ID()
   );
 
   // register scripts
